@@ -1,4 +1,6 @@
 
+# https://systemscheck.dev/missions/1
+
 MAX_TIME = 48985 + 1
 
 max_duration = 0
@@ -20,8 +22,7 @@ def parse(string):
         reactor_status[reactor_id] = time
      
 # sample-input.txt
-# reactor-cell-safety-shutdown-logs.txt
-with open('reactor-cell-safety-shutdown-logs.txt') as fp:
+with open('input.txt') as fp:
     for line in fp:
         parse(line.strip())
 
